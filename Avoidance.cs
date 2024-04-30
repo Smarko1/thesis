@@ -45,22 +45,6 @@ public class Avoidance : Agent
         int moveDirection = vectorAction[0];
         targetPosition = idlePosition;
 
-        /*
-        switch (moveDirection)
-        {
-            case 0:
-                targetPosition = idlePosition;
-                break;
-            case 1:
-                targetPosition = leftPosition;
-                break;
-            case 2:
-                targetPosition = rightPosition;
-                break;
-        }
-
-        */
-
         if (moveDirection == 0)
         {
             targetPosition = idlePosition;

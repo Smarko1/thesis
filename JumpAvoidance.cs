@@ -71,8 +71,7 @@ public class JumpAvoidance : Agent
     {
         int actionValue = actionBuffers.DiscreteActions[0];
         Debug.Log("Action value: " + actionValue);
-        if (actionValue == 1 && !isJumping && transform.position.y < maxJumpHeight)
-        {
+        if (actionValue == 1 && !isJumping && transform.position.y < maxJumpHeight){
             UpForce();
             thrust.SetActive(true);
             isJumping = true; 
@@ -91,7 +90,7 @@ public class JumpAvoidance : Agent
 
     private void DetectObstacleAndReact(ActionBuffers actionBuffers)
     {
-        Debug.Log("Meghívódott");
+        Debug.Log("MeghÃ­vÃ³dott");
         RaycastHit hit;
         float rayDistance = 10.0f;
         Vector3 forward = transform.forward * rayDistance;
